@@ -19,19 +19,19 @@ document.getElementById("calculate").addEventListener("click", function() {
 
     if (bmi <= 18.4) {
         category = "You are underweight";
-        bgcolor = "blue";
+        bgcolor = "lightblue";
     } else if (bmi <= 24.9) {
         category = "You are in a healthy weight range";
-        bgcolor = "green";
+        bgcolor = "lightgreen";
     } else if (bmi <= 29.9) {
         category = "You are overweight";
-        bgcolor = "yellow";
+        bgcolor = "lightyellow";
     } else if (bmi <= 34.9) {
         category = "You are in the obesity class I range";
-        bgcolor = "orange";
+        bgcolor = "lightorange";
     } else if (bmi <= 39.9) {
         category = "You are in the obesity class II range";
-        bgcolor = "lightred";
+        bgcolor = "red";
     } else {
         category = "You are in the obesity class III range";
         bgcolor = "darkred";
