@@ -21,22 +21,15 @@ document.getElementById("calculate").addEventListener("click", function() {
         category = "You are underweight";
         bgcolor = "lightblue";
     } else if (bmi <= 24.9) {
-        category = "You are in a healthy weight range";
+        category = "You are healthy";
         bgcolor = "lightgreen";
     } else if (bmi <= 29.9) {
         category = "You are overweight";
         bgcolor = "lightyellow";
-    } else if (bmi <= 34.9) {
-        category = "You are in the obesity class I range";
-        bgcolor = "lightorange";
-    } else if (bmi <= 39.9) {
-        category = "You are in the obesity class II range";
-        bgcolor = "red";
     } else {
-        category = "You are in the obesity class III range";
-        bgcolor = "darkred";
-    }
-
+        category = "You are obese";
+        bgcolor = "red";
+    } 
     resultDiv.innerHTML = `<p>Your BMI is <strong>${bmi_rounded}</strong>.</p><p>${category}</p>`;
     resultDiv.style.color = "white";
     resultDiv.style.backgroundColor = bgcolor;
